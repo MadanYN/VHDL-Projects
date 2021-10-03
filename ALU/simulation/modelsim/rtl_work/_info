@@ -1,0 +1,220 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hp/Desktop/alu/simulation/modelsim
+Ealu_beh
+Z1 w1632221840
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
+R0
+Z4 8C:/Users/hp/Desktop/alu/alu_beh.vhd
+Z5 FC:/Users/hp/Desktop/alu/alu_beh.vhd
+l0
+L5 1
+V;G2E;gFNbV0D4cFzIZoi^1
+!s100 >RbVd0oiK7G=D`5=IKoD11
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1632223949
+!i10b 1
+Z8 !s108 1632223948.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/hp/Desktop/alu/alu_beh.vhd|
+Z10 !s107 C:/Users/hp/Desktop/alu/alu_beh.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aa1
+R2
+R3
+DEx4 work 7 alu_beh 0 22 ;G2E;gFNbV0D4cFzIZoi^1
+!i122 4
+l39
+L18 47
+Vk9HZmAXiHeCMT3>`cfnOA0
+!s100 E:QjdV5Jz>F_X3FS0G^Jc0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1632220070
+R2
+R3
+!i122 3
+R0
+Z14 8C:/Users/hp/Desktop/alu/DUT.vhd
+Z15 FC:/Users/hp/Desktop/alu/DUT.vhd
+l0
+L3 1
+V9f]Mk@dA0LAnG2A4z4^d51
+!s100 FXQMK[dNlGR8j;kk;Ug1C1
+R6
+31
+Z16 !s110 1632223948
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/hp/Desktop/alu/DUT.vhd|
+Z18 !s107 C:/Users/hp/Desktop/alu/DUT.vhd|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 9f]Mk@dA0LAnG2A4z4^d51
+!i122 3
+l15
+L8 35
+VVIoMkbR8<DETl5AhiA>8?1
+!s100 S[j99z<OK3jJ`IDlZ^[2B3
+R6
+31
+R16
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Etestbench
+Z19 w1632222847
+R3
+R2
+!i122 5
+R0
+Z20 8C:/Users/hp/Desktop/alu/Testbench.vhd
+Z21 FC:/Users/hp/Desktop/alu/Testbench.vhd
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+Z22 !s108 1632223949.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/hp/Desktop/alu/Testbench.vhd|
+!s107 C:/Users/hp/Desktop/alu/Testbench.vhd|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 5
+l69
+L9 132
+Vld73e9[OIiBzmRZUn]XK<2
+!s100 ;dk894cDMUH2eSDgScTF72
+R6
+31
+R7
+!i10b 1
+R22
+R23
+Z24 !s107 C:/Users/hp/Desktop/alu/Testbench.vhd|
+!i113 1
+R11
+R12
+Etoplevel
+Z25 w1632222202
+Z26 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 2
+R0
+Z27 8C:/Users/hp/Desktop/alu/Scan_Chain_Files/TopLevel.vhdl
+Z28 FC:/Users/hp/Desktop/alu/Scan_Chain_Files/TopLevel.vhdl
+l0
+L5 1
+VRW=hg7X2^>c3bX1h9KmmK0
+!s100 gJ^gg3F;Qe=>jcbTR:JjO3
+R6
+31
+R16
+!i10b 1
+R8
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/hp/Desktop/alu/Scan_Chain_Files/TopLevel.vhdl|
+Z30 !s107 C:/Users/hp/Desktop/alu/Scan_Chain_Files/TopLevel.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R26
+R2
+R3
+DEx4 work 8 toplevel 0 22 RW=hg7X2^>c3bX1h9KmmK0
+!i122 2
+l75
+L13 146
+VW^VcL1AS58Dc@@0CT=k1c0
+!s100 7QRONelQ5<0]f`;ISOPzf3
+R6
+31
+R16
+!i10b 1
+R8
+R29
+R30
+!i113 1
+R11
+R12
+Ev_jtag
+Z31 w1623670142
+R26
+R2
+R3
+!i122 1
+R0
+Z32 8C:/Users/hp/Desktop/alu/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd
+Z33 FC:/Users/hp/Desktop/alu/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd
+l0
+L9 1
+VK7J:B[m3^:cB1Km[I3N602
+!s100 C:GMYKMFIUkIMaKNS>ek<2
+R6
+31
+R16
+!i10b 1
+R8
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/hp/Desktop/alu/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd|
+Z35 !s107 C:/Users/hp/Desktop/alu/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd|
+!i113 1
+R11
+R12
+Artl
+R26
+R2
+R3
+DEx4 work 6 v_jtag 0 22 K7J:B[m3^:cB1Km[I3N602
+!i122 1
+l85
+L44 83
+VJODH=ZQLe0=R51Pn2gWGM3
+!s100 QN^;ea;8E9NBL5]J::=Mk2
+R6
+31
+R16
+!i10b 1
+R8
+R34
+R35
+!i113 1
+R11
+R12

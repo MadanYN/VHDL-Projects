@@ -1,0 +1,78 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hp/Desktop/alu/simulation/modelsim
+vDUT
+Z1 !s110 1632224178
+!i10b 1
+!s100 DVH@B_QnOz2A<4oHdQWjN0
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+Ib>Aka<E`eR:E:1n@6ASQ10
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1632224160
+8DUT.vo
+FDUT.vo
+!i122 0
+L0 32 917
+OV;L;2020.1;71
+r1
+!s85 0
+31
+Z2 !s108 1632224178.000000
+!s107 DUT.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|DUT.vo|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+tCvgOpt 0
+n@d@u@t
+Etestbench
+Z3 w1632222847
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+!i122 1
+R0
+Z6 8C:/Users/hp/Desktop/alu/Testbench.vhd
+Z7 FC:/Users/hp/Desktop/alu/Testbench.vhd
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+Z8 OV;C;2020.1;71
+31
+R1
+!i10b 1
+R2
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/hp/Desktop/alu/Testbench.vhd|
+!s107 C:/Users/hp/Desktop/alu/Testbench.vhd|
+!i113 1
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
+Abehave
+R4
+R5
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 1
+l69
+L9 132
+Vld73e9[OIiBzmRZUn]XK<2
+!s100 ;dk894cDMUH2eSDgScTF72
+R8
+31
+R1
+!i10b 1
+R2
+R9
+Z12 !s107 C:/Users/hp/Desktop/alu/Testbench.vhd|
+!i113 1
+R10
+R11

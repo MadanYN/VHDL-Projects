@@ -1,0 +1,20 @@
+ library ieee;
+use ieee.std_logic_1164.all;
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+entity MUX_2x1  is
+  port (I1,I0,S: in std_logic; Y: out std_logic);
+end entity MUX_2x1;
+architecture Struct of MUX_2x1 is
+  signal A1,o1,o2: std_logic;
+begin
+
+  i1: INVERTER port map (A=> S, Y=> A1)
+
+  a1: AND_2 port map (A => I0, B => A1, Y => o1);
+  a2: AND_2  port map (A => I1, B => S, Y => o2);
+
+  O1: OR_2 port map (A => o1, B => o2, Y => Y);
+end Struct;

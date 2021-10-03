@@ -1,0 +1,78 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hp/Desktop/EE214/Multiplier/simulation/modelsim
+vDUT
+!s110 1632125956
+!i10b 1
+!s100 ^mG7k_Jdl4MLzOGoh]iKY0
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+I562Qk<iGXPcQZmFjNQ3_02
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1632125904
+8DUT.vo
+FDUT.vo
+!i122 0
+L0 32 1060
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1632125956.000000
+!s107 DUT.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|DUT.vo|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+tCvgOpt 0
+n@d@u@t
+Etestbench
+Z1 w1632125871
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+!i122 1
+R0
+Z4 8C:/Users/hp/Desktop/EE214/Multiplier/Testbench.vhd
+Z5 FC:/Users/hp/Desktop/EE214/Multiplier/Testbench.vhd
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1632125957
+!i10b 1
+Z8 !s108 1632125957.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/hp/Desktop/EE214/Multiplier/Testbench.vhd|
+!s107 C:/Users/hp/Desktop/EE214/Multiplier/Testbench.vhd|
+!i113 1
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
+Abehave
+R2
+R3
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 1
+l69
+L9 132
+V=kDjbIWR5jQIOE2AANEZ_1
+!s100 eX?2K8XN_Z0zU>ll2F3590
+R6
+31
+R7
+!i10b 1
+R8
+R9
+Z12 !s107 C:/Users/hp/Desktop/EE214/Multiplier/Testbench.vhd|
+!i113 1
+R10
+R11

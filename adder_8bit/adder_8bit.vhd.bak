@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+entity Adder_8bit  is
+  port (A7,A6,A5,A4,A3,A2,A1,A0,B7,B6,B5,B4,B3,B2,B1,B0: in std_logic; S7,S6,S5,S4,S3,S2,S1,S0, C: out std_logic);
+end entity Adder_8bit;
+architecture Struct of Adder_8bit is
+  signal q1,q2,q3,q4,q5,q6,q7: std_logic;
+begin
+
+  fa1: Full_Adder 
+       port map (A =>A0, B => B0, Cin => 0, S => q1,Cout=>S0);
+  fa1: Full_Adder 
+       port map (A =>A1, B => B1, Cin => 0, S => q2,Cout=>S1);
+  fa1: Full_Adder 
+       port map (A =>A2, B => B2, Cin => 0, S => q3,Cout=>S2);
+  fa1: Full_Adder 
+       port map (A =>A3, B => B3, Cin => 0, S => q4,Cout=>S3);
+	  fa1: Full_Adder 
+       port map (A =>A4, B => B4, Cin => 0, S => q5,Cout=>S4);
+	  fa1: Full_Adder 
+       port map (A =>A5, B => B5, Cin => 0, S => q6,Cout=>S5);
+	  fa1: Full_Adder 
+       port map (A =>A6, B => B6, Cin => 0, S => q7,Cout=>S6);
+	  fa1: Full_Adder 
+       port map (A =>A7, B => B7, Cin => 0, S => C,Cout=>S7);	 
+
+end Struct;

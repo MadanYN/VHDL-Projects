@@ -1,0 +1,28 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+library work;
+use work.MUX_2x1.all;
+entity right_2  is
+  port (B1: in std_logic;
+        A2: in std_logic_vector(7 downto 0);
+        S2: out std_logic_vector(7 downto 0));
+end entity right_2;
+architecture Struct of right_2 is
+begin
+
+      n2_bit : for i in 0 to 7 generate
+
+        lsb: if i < 2 generate
+            m2: mux port map(I(0) => A2(i), I(1) => A2(i+1), S => B1, Y => S2(i));
+        end generate lsb;
+
+        msb: if i > 1 generate
+            m2: mux port map(I(0) => A2(i), I(1) => '0', S => B1, Y => S2(i));
+        end generate msb;
+
+    end generate ; -- 4_bit
+end Struct;

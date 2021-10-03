@@ -1,0 +1,36 @@
+# Reading pref.tcl
+# do DUT_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {DUT.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:37:23 on Aug 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." DUT.vo 
+# -- Compiling module DUT
+# 
+# Top level modules:
+# 	DUT
+# End time: 03:37:23 on Aug 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/hp/Desktop/EE214/Full Adder/../../Testbench.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:37:23 on Aug 07,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/hp/Desktop/EE214/Full Adder/../../Testbench.vhdl 
+# ** Error: (vcom-7) Failed to open design unit file "C:/Users/hp/Desktop/EE214/Full Adder/../../Testbench.vhdl" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 03:37:24 on Aug 07,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./DUT_run_msim_gate_verilog.do line 10
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/hp/Desktop/EE214/Full Adder/../../Testbench.vhdl}"

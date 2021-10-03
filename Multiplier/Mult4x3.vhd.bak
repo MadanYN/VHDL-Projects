@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+library work;
+use work.FA.all;
+
+entity Mult4x3 is 
+  port (A3,A2,A1,A0,B2,B1,B0: in std_logic; M6,M5,M4,M3,M2,M1,M0: out std_logic);
+end entity Mult4x3;
+
+architecture struct of Mult4x3 is 
+  signal c1,c2,c3,c4,c5,c6,c7,x1,x2,x3,y1,y2,y3,y4,z1,z2,z3: std_logic;
+begin
+	 ha1:HALF_ADDER port map (A => A1 AND B0,B => A0 AND B1,S => M1,C => c1);
+	 fa1:Full_Adder port map (A => A2 AND B0,B => A1 AND B1,Cin => c1,S => x1,Cout =>y1 );
+	 ha2:HALF_ADDER port map (A => x1,B => A0 AND B2,S => M2,C => z1);
+	 ha3:HALF_ADDER port map (A => z1,B => y1,S => c2,C => c3);
+
+	 fa2:Full_Adder port map (A => A3 AND B0,B => A2 AND B1,Cin => c2,S => x2,Cout =>y2 );
+	 ha4:HALF_ADDER port map (A => x2,B => A1 AND B2,S => M3,C => z2);
+	 ha5:HALF_ADDER port map (A => z2,B => y2,S => c4,C => c5);
+
+	 fa3:Full_Adder port map (A => A3 AND B1,B => c3,Cin => c4,S => x3,Cout =>y3 );
+	 ha6:HALF_ADDER port map (A => x3,B => A2 AND B2,S => M4,C => z3);
+	 ha7:HALF_ADDER port map (A => z3,B => y3,S => c6,C => c7);
+
+	 fa4:Full_Adder port map (A => A3  AND B2,B => c5,Cin => c6,S => M5,Cout =>y4 );
+	 ha8:HALF_ADDER port map (A => y4,B => c7,S => M6);	 
+	 
+
+end struct;	 

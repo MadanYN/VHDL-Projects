@@ -1,0 +1,64 @@
+# Reading pref.tcl
+# do DUT_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {DUT.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:11:34 on Aug 15,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." DUT.vo 
+# -- Compiling module DUT
+# 
+# Top level modules:
+# 	DUT
+# End time: 13:11:34 on Aug 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/hp/Desktop/Decoder/Testbench.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:11:34 on Aug 15,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/hp/Desktop/Decoder/Testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Testbench
+# -- Compiling architecture Behave of Testbench
+# End time: 13:11:34 on Aug 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L maxv_ver -L gate_work -L work -voptargs="+acc"  Testbench
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L maxv_ver -L gate_work -L work -voptargs=""+acc"" Testbench 
+# Start time: 13:11:34 on Aug 15,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(behave)
+# Loading work.DUT
+# Loading maxv_ver.maxv_io
+# Loading maxv_ver.maxv_lcell
+# Loading maxv_ver.maxv_asynch_lcell
+# Loading maxv_ver.maxv_lcell_register
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading instances from DUT_v.sdo
+# Loading timing data from DUT_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: C:/Users/hp/Desktop/Decoder/Testbench.vhd
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: SUCCESS, all tests passed.
+#    Time: 232 ns  Iteration: 0  Instance: /testbench
+# End time: 13:12:02 on Aug 15,2021, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 0

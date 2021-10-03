@@ -1,0 +1,1091 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+
+// DATE "09/20/2021 13:48:24"
+
+// 
+// Device: Altera 5M1270ZT144C5 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module DUT (
+	input_vector,
+	output_vector);
+input 	[6:0] input_vector;
+output 	[6:0] output_vector;
+
+// Design Ports Information
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("DUT_v.sdo");
+// synopsys translate_on
+
+wire \add_instance|v|Y~combout ;
+wire \add_instance|ha1|S~combout ;
+wire \add_instance|fa1|x1|Y~4_combout ;
+wire \add_instance|fa1|x1|Y~5_combout ;
+wire \add_instance|ha2|S~combout ;
+wire \add_instance|v7|Y~combout ;
+wire \add_instance|fa1|o1|Y~3_combout ;
+wire \add_instance|fa1|o1|Y~9_combout ;
+wire \add_instance|v6|Y~combout ;
+wire \add_instance|ha2|C~combout ;
+wire \add_instance|fa2|x1|Y~combout ;
+wire \add_instance|ha4|S~combout ;
+wire \add_instance|v9|Y~combout ;
+wire \add_instance|fa2|o1|Y~0_combout ;
+wire \add_instance|ha3|C~combout ;
+wire \add_instance|ha4|C~combout ;
+wire \add_instance|fa3|x1|Y~combout ;
+wire \add_instance|ha6|S~combout ;
+wire \add_instance|fa3|o1|Y~0_combout ;
+wire \add_instance|ha6|C~combout ;
+wire \add_instance|v11|Y~combout ;
+wire \add_instance|ha5|C~combout ;
+wire \add_instance|fa4|x1|Y~combout ;
+wire \add_instance|ha8|S~0_combout ;
+wire [6:0] \input_vector~combout ;
+
+
+// Location: PIN_89,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \input_vector[0]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\input_vector~combout [0]),
+	.padio(input_vector[0]));
+// synopsys translate_off
+defparam \input_vector[0]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_86,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \input_vector[3]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\input_vector~combout [3]),
+	.padio(input_vector[3]));
+// synopsys translate_off
+defparam \input_vector[3]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X16_Y5_N4
+maxv_lcell \add_instance|v|Y (
+// Equation(s):
+// \add_instance|v|Y~combout  = ((\input_vector~combout [0] & ((\input_vector~combout [3]))))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\input_vector~combout [0]),
+	.datac(vcc),
+	.datad(\input_vector~combout [3]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|v|Y~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|v|Y .lut_mask = "cc00";
+defparam \add_instance|v|Y .operation_mode = "normal";
+defparam \add_instance|v|Y .output_mode = "comb_only";
+defparam \add_instance|v|Y .register_cascade_mode = "off";
+defparam \add_instance|v|Y .sum_lutc_input = "datac";
+defparam \add_instance|v|Y .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_63,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \input_vector[1]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\input_vector~combout [1]),
+	.padio(input_vector[1]));
+// synopsys translate_off
+defparam \input_vector[1]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_95,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \input_vector[4]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\input_vector~combout [4]),
+	.padio(input_vector[4]));
+// synopsys translate_off
+defparam \input_vector[4]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X13_Y5_N6
+maxv_lcell \add_instance|ha1|S (
+// Equation(s):
+// \add_instance|ha1|S~combout  = (\input_vector~combout [1] & (\input_vector~combout [3] $ (((\input_vector~combout [0] & \input_vector~combout [4]))))) # (!\input_vector~combout [1] & (((\input_vector~combout [0] & \input_vector~combout [4]))))
+
+	.clk(gnd),
+	.dataa(\input_vector~combout [1]),
+	.datab(\input_vector~combout [3]),
+	.datac(\input_vector~combout [0]),
+	.datad(\input_vector~combout [4]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|ha1|S~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|ha1|S .lut_mask = "7888";
+defparam \add_instance|ha1|S .operation_mode = "normal";
+defparam \add_instance|ha1|S .output_mode = "comb_only";
+defparam \add_instance|ha1|S .register_cascade_mode = "off";
+defparam \add_instance|ha1|S .sum_lutc_input = "datac";
+defparam \add_instance|ha1|S .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_70,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \input_vector[2]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\input_vector~combout [2]),
+	.padio(input_vector[2]));
+// synopsys translate_off
+defparam \input_vector[2]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_97,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \input_vector[5]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\input_vector~combout [5]),
+	.padio(input_vector[5]));
+// synopsys translate_off
+defparam \input_vector[5]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X13_Y5_N4
+maxv_lcell \add_instance|fa1|x1|Y~4 (
+// Equation(s):
+// \add_instance|fa1|x1|Y~4_combout  = \input_vector~combout [5] $ (((\input_vector~combout [1] & (!\input_vector~combout [3] & \input_vector~combout [4]))))
+
+	.clk(gnd),
+	.dataa(\input_vector~combout [1]),
+	.datab(\input_vector~combout [3]),
+	.datac(\input_vector~combout [5]),
+	.datad(\input_vector~combout [4]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|fa1|x1|Y~4_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|fa1|x1|Y~4 .lut_mask = "d2f0";
+defparam \add_instance|fa1|x1|Y~4 .operation_mode = "normal";
+defparam \add_instance|fa1|x1|Y~4 .output_mode = "comb_only";
+defparam \add_instance|fa1|x1|Y~4 .register_cascade_mode = "off";
+defparam \add_instance|fa1|x1|Y~4 .sum_lutc_input = "datac";
+defparam \add_instance|fa1|x1|Y~4 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X13_Y5_N8
+maxv_lcell \add_instance|fa1|x1|Y~5 (
+// Equation(s):
+// \add_instance|fa1|x1|Y~5_combout  = (\input_vector~combout [0] & (((\add_instance|fa1|x1|Y~4_combout )))) # (!\input_vector~combout [0] & (\input_vector~combout [1] & ((\input_vector~combout [4]))))
+
+	.clk(gnd),
+	.dataa(\input_vector~combout [1]),
+	.datab(\add_instance|fa1|x1|Y~4_combout ),
+	.datac(\input_vector~combout [0]),
+	.datad(\input_vector~combout [4]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|fa1|x1|Y~5_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|fa1|x1|Y~5 .lut_mask = "cac0";
+defparam \add_instance|fa1|x1|Y~5 .operation_mode = "normal";
+defparam \add_instance|fa1|x1|Y~5 .output_mode = "comb_only";
+defparam \add_instance|fa1|x1|Y~5 .register_cascade_mode = "off";
+defparam \add_instance|fa1|x1|Y~5 .sum_lutc_input = "datac";
+defparam \add_instance|fa1|x1|Y~5 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y4_N9
+maxv_lcell \add_instance|ha2|S (
+// Equation(s):
+// \add_instance|ha2|S~combout  = \add_instance|fa1|x1|Y~5_combout  $ (((\input_vector~combout [2] & (\input_vector~combout [3]))))
+
+	.clk(gnd),
+	.dataa(\input_vector~combout [2]),
+	.datab(\input_vector~combout [3]),
+	.datac(\add_instance|fa1|x1|Y~5_combout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|ha2|S~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|ha2|S .lut_mask = "7878";
+defparam \add_instance|ha2|S .operation_mode = "normal";
+defparam \add_instance|ha2|S .output_mode = "comb_only";
+defparam \add_instance|ha2|S .register_cascade_mode = "off";
+defparam \add_instance|ha2|S .sum_lutc_input = "datac";
+defparam \add_instance|ha2|S .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X13_Y5_N2
+maxv_lcell \add_instance|v7|Y (
+// Equation(s):
+// \add_instance|v7|Y~combout  = (\input_vector~combout [1] & (((\input_vector~combout [5]))))
+
+	.clk(gnd),
+	.dataa(\input_vector~combout [1]),
+	.datab(vcc),
+	.datac(\input_vector~combout [5]),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|v7|Y~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|v7|Y .lut_mask = "a0a0";
+defparam \add_instance|v7|Y .operation_mode = "normal";
+defparam \add_instance|v7|Y .output_mode = "comb_only";
+defparam \add_instance|v7|Y .register_cascade_mode = "off";
+defparam \add_instance|v7|Y .sum_lutc_input = "datac";
+defparam \add_instance|v7|Y .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X13_Y5_N9
+maxv_lcell \add_instance|fa1|o1|Y~3 (
+// Equation(s):
+// \add_instance|fa1|o1|Y~3_combout  = ((\input_vector~combout [3]) # ((\input_vector~combout [5])))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\input_vector~combout [3]),
+	.datac(\input_vector~combout [5]),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|fa1|o1|Y~3_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|fa1|o1|Y~3 .lut_mask = "fcfc";
+defparam \add_instance|fa1|o1|Y~3 .operation_mode = "normal";
+defparam \add_instance|fa1|o1|Y~3 .output_mode = "comb_only";
+defparam \add_instance|fa1|o1|Y~3 .register_cascade_mode = "off";
+defparam \add_instance|fa1|o1|Y~3 .sum_lutc_input = "datac";
+defparam \add_instance|fa1|o1|Y~3 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X13_Y5_N5
+maxv_lcell \add_instance|fa1|o1|Y~9 (
+// Equation(s):
+// \add_instance|fa1|o1|Y~9_combout  = (\input_vector~combout [1] & (\add_instance|fa1|o1|Y~3_combout  & (\input_vector~combout [0] & \input_vector~combout [4])))
+
+	.clk(gnd),
+	.dataa(\input_vector~combout [1]),
+	.datab(\add_instance|fa1|o1|Y~3_combout ),
+	.datac(\input_vector~combout [0]),
+	.datad(\input_vector~combout [4]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|fa1|o1|Y~9_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|fa1|o1|Y~9 .lut_mask = "8000";
+defparam \add_instance|fa1|o1|Y~9 .operation_mode = "normal";
+defparam \add_instance|fa1|o1|Y~9 .output_mode = "comb_only";
+defparam \add_instance|fa1|o1|Y~9 .register_cascade_mode = "off";
+defparam \add_instance|fa1|o1|Y~9 .sum_lutc_input = "datac";
+defparam \add_instance|fa1|o1|Y~9 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_91,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \input_vector[6]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\input_vector~combout [6]),
+	.padio(input_vector[6]));
+// synopsys translate_off
+defparam \input_vector[6]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X15_Y4_N7
+maxv_lcell \add_instance|v6|Y (
+// Equation(s):
+// \add_instance|v6|Y~combout  = ((\input_vector~combout [6] & ((\input_vector~combout [0]))))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\input_vector~combout [6]),
+	.datac(vcc),
+	.datad(\input_vector~combout [0]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|v6|Y~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|v6|Y .lut_mask = "cc00";
+defparam \add_instance|v6|Y .operation_mode = "normal";
+defparam \add_instance|v6|Y .output_mode = "comb_only";
+defparam \add_instance|v6|Y .register_cascade_mode = "off";
+defparam \add_instance|v6|Y .sum_lutc_input = "datac";
+defparam \add_instance|v6|Y .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y4_N8
+maxv_lcell \add_instance|ha2|C (
+// Equation(s):
+// \add_instance|ha2|C~combout  = (\input_vector~combout [2] & (\input_vector~combout [3] & (\add_instance|fa1|x1|Y~5_combout )))
+
+	.clk(gnd),
+	.dataa(\input_vector~combout [2]),
+	.datab(\input_vector~combout [3]),
+	.datac(\add_instance|fa1|x1|Y~5_combout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|ha2|C~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|ha2|C .lut_mask = "8080";
+defparam \add_instance|ha2|C .operation_mode = "normal";
+defparam \add_instance|ha2|C .output_mode = "comb_only";
+defparam \add_instance|ha2|C .register_cascade_mode = "off";
+defparam \add_instance|ha2|C .sum_lutc_input = "datac";
+defparam \add_instance|ha2|C .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y4_N6
+maxv_lcell \add_instance|fa2|x1|Y (
+// Equation(s):
+// \add_instance|fa2|x1|Y~combout  = \add_instance|v7|Y~combout  $ (\add_instance|fa1|o1|Y~9_combout  $ (\add_instance|v6|Y~combout  $ (\add_instance|ha2|C~combout )))
+
+	.clk(gnd),
+	.dataa(\add_instance|v7|Y~combout ),
+	.datab(\add_instance|fa1|o1|Y~9_combout ),
+	.datac(\add_instance|v6|Y~combout ),
+	.datad(\add_instance|ha2|C~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|fa2|x1|Y~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|fa2|x1|Y .lut_mask = "6996";
+defparam \add_instance|fa2|x1|Y .operation_mode = "normal";
+defparam \add_instance|fa2|x1|Y .output_mode = "comb_only";
+defparam \add_instance|fa2|x1|Y .register_cascade_mode = "off";
+defparam \add_instance|fa2|x1|Y .sum_lutc_input = "datac";
+defparam \add_instance|fa2|x1|Y .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y6_N6
+maxv_lcell \add_instance|ha4|S (
+// Equation(s):
+// \add_instance|ha4|S~combout  = \add_instance|fa2|x1|Y~combout  $ ((((\input_vector~combout [2] & \input_vector~combout [4]))))
+
+	.clk(gnd),
+	.dataa(\add_instance|fa2|x1|Y~combout ),
+	.datab(vcc),
+	.datac(\input_vector~combout [2]),
+	.datad(\input_vector~combout [4]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|ha4|S~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|ha4|S .lut_mask = "5aaa";
+defparam \add_instance|ha4|S .operation_mode = "normal";
+defparam \add_instance|ha4|S .output_mode = "comb_only";
+defparam \add_instance|ha4|S .register_cascade_mode = "off";
+defparam \add_instance|ha4|S .sum_lutc_input = "datac";
+defparam \add_instance|ha4|S .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y5_N2
+maxv_lcell \add_instance|v9|Y (
+// Equation(s):
+// \add_instance|v9|Y~combout  = ((\input_vector~combout [1] & (\input_vector~combout [6])))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\input_vector~combout [1]),
+	.datac(\input_vector~combout [6]),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|v9|Y~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|v9|Y .lut_mask = "c0c0";
+defparam \add_instance|v9|Y .operation_mode = "normal";
+defparam \add_instance|v9|Y .output_mode = "comb_only";
+defparam \add_instance|v9|Y .register_cascade_mode = "off";
+defparam \add_instance|v9|Y .sum_lutc_input = "datac";
+defparam \add_instance|v9|Y .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y4_N5
+maxv_lcell \add_instance|fa2|o1|Y~0 (
+// Equation(s):
+// \add_instance|fa2|o1|Y~0_combout  = (\add_instance|v7|Y~combout  & ((\add_instance|v6|Y~combout ) # (\add_instance|fa1|o1|Y~9_combout  $ (\add_instance|ha2|C~combout )))) # (!\add_instance|v7|Y~combout  & (\add_instance|v6|Y~combout  & 
+// (\add_instance|fa1|o1|Y~9_combout  $ (\add_instance|ha2|C~combout ))))
+
+	.clk(gnd),
+	.dataa(\add_instance|v7|Y~combout ),
+	.datab(\add_instance|fa1|o1|Y~9_combout ),
+	.datac(\add_instance|v6|Y~combout ),
+	.datad(\add_instance|ha2|C~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|fa2|o1|Y~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|fa2|o1|Y~0 .lut_mask = "b2e8";
+defparam \add_instance|fa2|o1|Y~0 .operation_mode = "normal";
+defparam \add_instance|fa2|o1|Y~0 .output_mode = "comb_only";
+defparam \add_instance|fa2|o1|Y~0 .register_cascade_mode = "off";
+defparam \add_instance|fa2|o1|Y~0 .sum_lutc_input = "datac";
+defparam \add_instance|fa2|o1|Y~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y4_N2
+maxv_lcell \add_instance|ha3|C (
+// Equation(s):
+// \add_instance|ha3|C~combout  = (\input_vector~combout [2] & (\add_instance|fa1|o1|Y~9_combout  & (\input_vector~combout [3] & \add_instance|fa1|x1|Y~5_combout )))
+
+	.clk(gnd),
+	.dataa(\input_vector~combout [2]),
+	.datab(\add_instance|fa1|o1|Y~9_combout ),
+	.datac(\input_vector~combout [3]),
+	.datad(\add_instance|fa1|x1|Y~5_combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|ha3|C~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|ha3|C .lut_mask = "8000";
+defparam \add_instance|ha3|C .operation_mode = "normal";
+defparam \add_instance|ha3|C .output_mode = "comb_only";
+defparam \add_instance|ha3|C .register_cascade_mode = "off";
+defparam \add_instance|ha3|C .sum_lutc_input = "datac";
+defparam \add_instance|ha3|C .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y6_N1
+maxv_lcell \add_instance|ha4|C (
+// Equation(s):
+// \add_instance|ha4|C~combout  = (\add_instance|fa2|x1|Y~combout  & (((\input_vector~combout [2] & \input_vector~combout [4]))))
+
+	.clk(gnd),
+	.dataa(\add_instance|fa2|x1|Y~combout ),
+	.datab(vcc),
+	.datac(\input_vector~combout [2]),
+	.datad(\input_vector~combout [4]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|ha4|C~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|ha4|C .lut_mask = "a000";
+defparam \add_instance|ha4|C .operation_mode = "normal";
+defparam \add_instance|ha4|C .output_mode = "comb_only";
+defparam \add_instance|ha4|C .register_cascade_mode = "off";
+defparam \add_instance|ha4|C .sum_lutc_input = "datac";
+defparam \add_instance|ha4|C .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y6_N9
+maxv_lcell \add_instance|fa3|x1|Y (
+// Equation(s):
+// \add_instance|fa3|x1|Y~combout  = \add_instance|v9|Y~combout  $ (\add_instance|fa2|o1|Y~0_combout  $ (\add_instance|ha3|C~combout  $ (\add_instance|ha4|C~combout )))
+
+	.clk(gnd),
+	.dataa(\add_instance|v9|Y~combout ),
+	.datab(\add_instance|fa2|o1|Y~0_combout ),
+	.datac(\add_instance|ha3|C~combout ),
+	.datad(\add_instance|ha4|C~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|fa3|x1|Y~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|fa3|x1|Y .lut_mask = "6996";
+defparam \add_instance|fa3|x1|Y .operation_mode = "normal";
+defparam \add_instance|fa3|x1|Y .output_mode = "comb_only";
+defparam \add_instance|fa3|x1|Y .register_cascade_mode = "off";
+defparam \add_instance|fa3|x1|Y .sum_lutc_input = "datac";
+defparam \add_instance|fa3|x1|Y .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y6_N7
+maxv_lcell \add_instance|ha6|S (
+// Equation(s):
+// \add_instance|ha6|S~combout  = (\add_instance|fa3|x1|Y~combout  $ (((\input_vector~combout [2] & \input_vector~combout [5]))))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\add_instance|fa3|x1|Y~combout ),
+	.datac(\input_vector~combout [2]),
+	.datad(\input_vector~combout [5]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|ha6|S~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|ha6|S .lut_mask = "3ccc";
+defparam \add_instance|ha6|S .operation_mode = "normal";
+defparam \add_instance|ha6|S .output_mode = "comb_only";
+defparam \add_instance|ha6|S .register_cascade_mode = "off";
+defparam \add_instance|ha6|S .sum_lutc_input = "datac";
+defparam \add_instance|ha6|S .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y6_N8
+maxv_lcell \add_instance|fa3|o1|Y~0 (
+// Equation(s):
+// \add_instance|fa3|o1|Y~0_combout  = (\add_instance|v9|Y~combout  & ((\add_instance|ha3|C~combout ) # (\add_instance|fa2|o1|Y~0_combout  $ (\add_instance|ha4|C~combout )))) # (!\add_instance|v9|Y~combout  & (\add_instance|ha3|C~combout  & 
+// (\add_instance|fa2|o1|Y~0_combout  $ (\add_instance|ha4|C~combout ))))
+
+	.clk(gnd),
+	.dataa(\add_instance|v9|Y~combout ),
+	.datab(\add_instance|fa2|o1|Y~0_combout ),
+	.datac(\add_instance|ha3|C~combout ),
+	.datad(\add_instance|ha4|C~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|fa3|o1|Y~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|fa3|o1|Y~0 .lut_mask = "b2e8";
+defparam \add_instance|fa3|o1|Y~0 .operation_mode = "normal";
+defparam \add_instance|fa3|o1|Y~0 .output_mode = "comb_only";
+defparam \add_instance|fa3|o1|Y~0 .register_cascade_mode = "off";
+defparam \add_instance|fa3|o1|Y~0 .sum_lutc_input = "datac";
+defparam \add_instance|fa3|o1|Y~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y6_N2
+maxv_lcell \add_instance|ha6|C (
+// Equation(s):
+// \add_instance|ha6|C~combout  = ((\add_instance|fa3|x1|Y~combout  & (\input_vector~combout [2] & \input_vector~combout [5])))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\add_instance|fa3|x1|Y~combout ),
+	.datac(\input_vector~combout [2]),
+	.datad(\input_vector~combout [5]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|ha6|C~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|ha6|C .lut_mask = "c000";
+defparam \add_instance|ha6|C .operation_mode = "normal";
+defparam \add_instance|ha6|C .output_mode = "comb_only";
+defparam \add_instance|ha6|C .register_cascade_mode = "off";
+defparam \add_instance|ha6|C .sum_lutc_input = "datac";
+defparam \add_instance|ha6|C .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y4_N0
+maxv_lcell \add_instance|v11|Y (
+// Equation(s):
+// \add_instance|v11|Y~combout  = (((\input_vector~combout [2] & \input_vector~combout [6])))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\input_vector~combout [2]),
+	.datad(\input_vector~combout [6]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|v11|Y~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|v11|Y .lut_mask = "f000";
+defparam \add_instance|v11|Y .operation_mode = "normal";
+defparam \add_instance|v11|Y .output_mode = "comb_only";
+defparam \add_instance|v11|Y .register_cascade_mode = "off";
+defparam \add_instance|v11|Y .sum_lutc_input = "datac";
+defparam \add_instance|v11|Y .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y6_N3
+maxv_lcell \add_instance|ha5|C (
+// Equation(s):
+// \add_instance|ha5|C~combout  = (\add_instance|fa2|x1|Y~combout  & (\add_instance|fa2|o1|Y~0_combout  & (\input_vector~combout [2] & \input_vector~combout [4])))
+
+	.clk(gnd),
+	.dataa(\add_instance|fa2|x1|Y~combout ),
+	.datab(\add_instance|fa2|o1|Y~0_combout ),
+	.datac(\input_vector~combout [2]),
+	.datad(\input_vector~combout [4]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|ha5|C~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|ha5|C .lut_mask = "8000";
+defparam \add_instance|ha5|C .operation_mode = "normal";
+defparam \add_instance|ha5|C .output_mode = "comb_only";
+defparam \add_instance|ha5|C .register_cascade_mode = "off";
+defparam \add_instance|ha5|C .sum_lutc_input = "datac";
+defparam \add_instance|ha5|C .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y6_N5
+maxv_lcell \add_instance|fa4|x1|Y (
+// Equation(s):
+// \add_instance|fa4|x1|Y~combout  = \add_instance|fa3|o1|Y~0_combout  $ (\add_instance|ha6|C~combout  $ (\add_instance|v11|Y~combout  $ (\add_instance|ha5|C~combout )))
+
+	.clk(gnd),
+	.dataa(\add_instance|fa3|o1|Y~0_combout ),
+	.datab(\add_instance|ha6|C~combout ),
+	.datac(\add_instance|v11|Y~combout ),
+	.datad(\add_instance|ha5|C~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|fa4|x1|Y~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|fa4|x1|Y .lut_mask = "6996";
+defparam \add_instance|fa4|x1|Y .operation_mode = "normal";
+defparam \add_instance|fa4|x1|Y .output_mode = "comb_only";
+defparam \add_instance|fa4|x1|Y .register_cascade_mode = "off";
+defparam \add_instance|fa4|x1|Y .sum_lutc_input = "datac";
+defparam \add_instance|fa4|x1|Y .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X15_Y6_N4
+maxv_lcell \add_instance|ha8|S~0 (
+// Equation(s):
+// \add_instance|ha8|S~0_combout  = (\add_instance|fa3|o1|Y~0_combout  & ((\add_instance|ha6|C~combout  & ((!\add_instance|ha5|C~combout ) # (!\add_instance|v11|Y~combout ))) # (!\add_instance|ha6|C~combout  & ((\add_instance|v11|Y~combout ) # 
+// (\add_instance|ha5|C~combout ))))) # (!\add_instance|fa3|o1|Y~0_combout  & ((\add_instance|ha6|C~combout  & ((\add_instance|v11|Y~combout ) # (\add_instance|ha5|C~combout ))) # (!\add_instance|ha6|C~combout  & (\add_instance|v11|Y~combout  & 
+// \add_instance|ha5|C~combout ))))
+
+	.clk(gnd),
+	.dataa(\add_instance|fa3|o1|Y~0_combout ),
+	.datab(\add_instance|ha6|C~combout ),
+	.datac(\add_instance|v11|Y~combout ),
+	.datad(\add_instance|ha5|C~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\add_instance|ha8|S~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \add_instance|ha8|S~0 .lut_mask = "7ee8";
+defparam \add_instance|ha8|S~0 .operation_mode = "normal";
+defparam \add_instance|ha8|S~0 .output_mode = "comb_only";
+defparam \add_instance|ha8|S~0 .register_cascade_mode = "off";
+defparam \add_instance|ha8|S~0 .sum_lutc_input = "datac";
+defparam \add_instance|ha8|S~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_88,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \output_vector[0]~I (
+	.datain(\add_instance|v|Y~combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(output_vector[0]));
+// synopsys translate_off
+defparam \output_vector[0]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_85,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \output_vector[1]~I (
+	.datain(\add_instance|ha1|S~combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(output_vector[1]));
+// synopsys translate_off
+defparam \output_vector[1]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_81,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \output_vector[2]~I (
+	.datain(\add_instance|ha2|S~combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(output_vector[2]));
+// synopsys translate_off
+defparam \output_vector[2]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_98,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \output_vector[3]~I (
+	.datain(\add_instance|ha4|S~combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(output_vector[3]));
+// synopsys translate_off
+defparam \output_vector[3]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_94,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \output_vector[4]~I (
+	.datain(\add_instance|ha6|S~combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(output_vector[4]));
+// synopsys translate_off
+defparam \output_vector[4]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_93,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \output_vector[5]~I (
+	.datain(\add_instance|fa4|x1|Y~combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(output_vector[5]));
+// synopsys translate_off
+defparam \output_vector[5]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_96,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \output_vector[6]~I (
+	.datain(\add_instance|ha8|S~0_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(output_vector[6]));
+// synopsys translate_off
+defparam \output_vector[6]~I .operation_mode = "output";
+// synopsys translate_on
+
+endmodule
